@@ -1,13 +1,3 @@
-//массивы 
-
-const array = [1, 2, 3]
-console.log(array.length) // показывает длину массива 
-console.log(array[1]) // вызов элемента (покажет цифру два)
-console.log(array[array.length -1 ]) // т.к. array.length у нас 3 знака и когда будем вызывать элемент, то он 
-// высметит array[3] 3 - длина массива, но сонсоль не может показать 3й элемент так как мы считаем с 0 1 2 и 3его нет 
-// поэтом вычитаем единицу 
-
-array [0] = 'rekrf'
-console.log(array) //заменилии 1 на слово 
-
-
+const inputElement = document.ElementById('title')
+const inputElement = document.ElementById('title')
+const inputElement = document.ElementById('title')
