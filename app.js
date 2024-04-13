@@ -1,8 +1,3 @@
+let c = 5 ;
 
-function myFn() {
-   a = true
-    console.log(a)
-}
-
-myFn()
-console.log(a)
+console.log(c); 
