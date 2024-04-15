@@ -1,6 +1,5 @@
+let num;
 
-for (let i = 2; i <= 10; i++) {
-    if (i % 2 == 0) {
-      alert( i );
-    }
-  }
+do {
+  num = prompt("Введите число больше 100?", 0);
+} while (num <= 100 && num);
