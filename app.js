@@ -1,5 +1,17 @@
-let num;
 
-do {
-  num = prompt("Введите число больше 100?", 0);
-} while (num <= 100 && num);
+
+
+  if (x === 'Edge' ) {
+    alert( "You've got the Edge!" );
+  }
+
+  if else (x === 'Chrome', 'Firefox', 'Safari', 'Opera' ) {
+    alert( 'Okay we support these browsers too' );
+  }
+
+  else () {
+    alert( 'We hope that this page looks ok!');
+  }
+
+
+  
