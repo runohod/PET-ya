@@ -18,4 +18,4 @@
     case 'Edge':
       alert( "You've got the Edge!" );
       break;
-  
+  }
