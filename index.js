@@ -40,3 +40,9 @@
 
 
 
+// const multiply = function ( a, b) {
+//     return (a * b);
+// }
+
+// multiply (5, 6); 
+
