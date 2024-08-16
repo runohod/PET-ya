@@ -43,6 +43,19 @@
 // const multiply = function ( a, b) {
 //     return (a * b);
 // }
-
 // multiply (5, 6); 
+
+
+
+// function checkNum (numb) {
+// if (numb >= 0) {
+// console.log ('число положительное');
+// } else if (numb < 0) { 
+// console.log ('число отрицательное');
+//     }
+// }
+
+
+// const str = 'Привет, мир!';
+// console.log(str.length);
 
