@@ -59,3 +59,66 @@
 // const str = 'Привет, мир!';
 // console.log(str.length);
 
+
+// Пример реализации
+
+// Имитация работы с API
+const requestUsers = (query) => {
+    return new Promise((resolve, reject) => {
+    // Имитация запроса к API
+    if (query.name || query.age) {
+    // Фильтрация по имени или возрасту
+    } else {
+    // Без фильтрации
+    }
+   
+    // Обработка результата
+    if (result.length > 0) {
+    resolve(result);
+    } else {
+    reject('Users not found');
+    }
+    });
+   };
+   
+   const requestUsersWithError = () => {
+    return new Promise((resolve, reject) => {
+    // Имитация ошибки
+    reject('Ошибка при запросе');
+    });
+   };
+   
+   // Показ списка пользователей
+   const showUsers = async (query) => {
+    try {
+    const users = await requestUsers(query);
+    document.getElementById('users').innerHTML = users.map(user => `${user.name}, ${user.age}`).join(', ');
+    } catch (error) {
+    document.getElementById('users').innerHTML = error;
+    }
+   };
+   
+   // Отображение текста "Loading..."
+   document.getElementById('users').innerHTML = 'Loading...';
+   
+   // Обработка возможной ошибки
+   showUsers();
+   
+   // Фильтрация по имени
+   document.getElementById('filterName').addEventListener('click', () => {
+    const name = document.getElementById('name').value;
+    showUsers({ name });
+   });
+   
+   // Фильтрация по возрасту
+   document.getElementById('filterAge').addEventListener('click', () => {
+    const age = document.getElementById('age').value;
+    showUsers({ age });
+   });
+   
+   // Смена страницы и количества элементов на странице
+   document.getElementById('changePage').addEventListener('click', () => {
+    const limit = document.getElementById('limit').value;
+    const offset = document.getElementById('offset').value;
+    showUsers({ limit, offset });
+   });
