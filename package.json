@@ -21,7 +21,9 @@
     "build": "rd /s /q dist && webpack", // добавили удаление папки
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "lint": "eslint src",
+    "fix": "eslint --fix src"
   },
   "browserslist": [
     ">0.2%",
