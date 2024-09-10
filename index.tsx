@@ -1,3 +1,3 @@
 const flowers: string = 'Розы';
 
-console.log(flowers);
+console.log(flowers);д
